@@ -25,8 +25,9 @@ public class Kiwi : MonoBehaviour
             sr.enabled = false;
             circle.enabled = false;
             colleted.SetActive(true);
-
+            
             GameController.instance.totalScore += Score;
+            GameController.instance.UpdateScoreText();
             
             Destroy(gameObject, 0.3f);
         }
